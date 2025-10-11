@@ -26,7 +26,7 @@ function Hero() {
         className="text-center md:text-left z-10"
       >
         <h1 className="text-6xl md:text-7xl font-extrabold text-green-400 drop-shadow-xl animate-pulse">
-          Soufiane El Jadi
+          Soufiane EL JADI
         </h1>
         <h2 className="text-3xl md:text-4xl font-semibold text-white my-4">
           Software Engineer

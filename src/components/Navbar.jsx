@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-omnitrixGreen">Ben 10 - portfolio</div>
+          <div className="text-2xl font-bold text-omnitrixGreen">Soufiane EL JADI</div>
 
           <div className="hidden md:flex space-x-8">
             {links.map((link) => (
