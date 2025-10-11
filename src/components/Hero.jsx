@@ -1,41 +1,55 @@
-
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="py-20 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-4">
+    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-black via-gray-900 to-green-950 overflow-hidden px-4">
       
-      {/* Picture */}
-      <div className="w-48 h-48 md:w-64 md:h-64 mb-8 md:mb-0 md:mr-12 flex-shrink-0">
+      {/* Profile Picture */}
+      <motion.div
+        initial={{ x: -300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.2, type: "spring" }}
+        className="w-56 h-56 md:w-72 md:h-72 mb-10 md:mb-0 md:mr-12 flex-shrink-0 rounded-full border-8 border-green-500 shadow-2xl overflow-hidden"
+      >
         <img
-          src="/assets/benten.jpg"
+          src="/assets/profile.jpg"
           alt="Soufiane El Jadi"
-          className="w-full h-full object-cover rounded-full shadow-lg"
+          className="w-full h-full object-cover"
         />
-      </div>
+      </motion.div>
 
-      {/* Text */}
-      <div className="text-center md:text-left">
-        <h1 className="text-2xl md:text-4xl font-bold mb-4">Soufiane EL JADI</h1>
-        <h2 className="text-xl md:text-2xl text-green-500 font-semibold mb-4">
+      {/* Text Content */}
+      <motion.div
+        initial={{ x: 300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.2, type: "spring" }}
+        className="text-center md:text-left z-10"
+      >
+        <h1 className="text-6xl md:text-7xl font-extrabold text-green-400 drop-shadow-xl animate-pulse">
+          Soufiane El Jadi
+        </h1>
+        <h2 className="text-3xl md:text-4xl font-semibold text-white my-4">
           Software Engineer
         </h2>
-        <p className="text-gray-700 text-lg md:text-xl max-w-lg">       
-         I'm a passionate technologist with a solid foundation in C, C++, Java, J2EE, PHP, Laravel, Shell Scripting, and more. 
-         </p>
-         <p className="text-gray-700 text-lg md:text-xl max-w-lg">
-        I pursued my education at University Sultan Moulay Slimane, where I earned a diploma as a Technicien Specialise after two years of dedicated study.
+        <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6 ">
+          I'm a passionate technologist with a solid foundation in C, C++, Java, J2EE, PHP, Laravel, Shell Scripting, and more. I pursued my education at University Sultan Moulay Slimane, where I earned a diploma as a Technicien Specialise after two years of dedicated study..
         </p>
-        {/* <a
+                <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6">
+          Continuing my quest for knowledge and growth, I embarked on a journey at School 1337, where I honed my skills further and delved deeper into the world of computer science and programming.
+        </p>
+        <motion.a
           href="#projects"
-          className="mt-6 inline-block px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600 transition"
+          whileHover={{ scale: 1.1, boxShadow: "0 0 20px #3fb11dff" }}
+          className="inline-block px-8 py-4 bg-green-500 rounded shadow-lg text-white font-bold "
         >
           See My Work
-        </a> */}
-      </div>
+        </motion.a>
+      </motion.div>
 
+      {/* Green Energy Overlay */}
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-red-500 opacity-10 rounded-full blur-3xl animate-pulse-slow"></div> */}
     </section>
   );
 }
-
 
 export default Hero;

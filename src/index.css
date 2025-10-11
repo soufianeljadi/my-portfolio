@@ -3,6 +3,25 @@
 @tailwind utilities;
 
 
+
+html, body {
+  background-color: #0F0F0F;
+};
+
+/* ✅ Optional Omnitrix grid background */
+.omnitrix-grid {
+  background-image: linear-gradient(90deg, #00ff9940 1px, transparent 1px),
+                    linear-gradient(#00ff9940 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 15s linear infinite;
+}
+
+/* ✅ Extra glow utility */
+.glow-text {
+  text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 20px #00ff7f;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
