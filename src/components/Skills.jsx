@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 // src/components/Skills.jsx
 
 const skills = [
-  { name: "Html", img: "/assets/html.png" },
-  { name: "Css", img: "/assets/css.png" },
-  { name: "JavaScript", img: "/assets/js.png" },
-  { name: "C", img: "/assets/C.png" },
-  { name: "C++", img: "/assets/c-.png" },
-  { name: "PHP", img: "/assets/php.png" },
-  { name: "Laravel", img: "/assets/Laravel.png" },
-  { name: "MySQL", img: "/assets/mysql.png" },
-  { name: "React", img: "/assets/react.png" },
+  { name: "Html", img: process.env.PUBLIC_URL + "/assets/html.png" },
+  { name: "Css", img: process.env.PUBLIC_URL + "/assets/css.png" },
+  { name: "JavaScript", img:process.env.PUBLIC_URL +  "/assets/js.png" },
+  { name: "C", img: process.env.PUBLIC_URL +  "/assets/C.png" },
+  { name: "C++", img:process.env.PUBLIC_URL +  "/assets/c-.png" },
+  { name: "PHP", img: process.env.PUBLIC_URL +  "/assets/php.png" },
+  { name: "Laravel", img: process.env.PUBLIC_URL +  "/assets/Laravel.png" },
+  { name: "MySQL", img: process.env.PUBLIC_URL + "/assets/mysql.png" },
+  { name: "React", img:  process.env.PUBLIC_URL + "/assets/react.png" },
 
 
 ];

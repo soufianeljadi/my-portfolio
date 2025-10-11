@@ -12,7 +12,7 @@ function Hero() {
         className="w-56 h-56 md:w-72 md:h-72 mb-10 md:mb-0 md:mr-12 flex-shrink-0 rounded-full border-8 border-green-500 shadow-2xl overflow-hidden"
       >
         <img
-          src="/assets/profile.jpg"
+          src={process.env.PUBLIC_URL + "/assets/profile.jpg"}
           alt="Soufiane El Jadi"
           className="w-full h-full object-cover"
         />
