@@ -13,11 +13,11 @@ function App() {
       <Navbar />
       <main className="pt-16">
         <Hero />
-            <div className="bg-black text-white min-h-screen">
+            {/* <div className="bg-black text-white min-h-screen"> */}
         <ResumeSection />
         <Projects />
         <Skills />
-            </div>
+            {/* </div> */}
 
         <Contact />
       </main>
