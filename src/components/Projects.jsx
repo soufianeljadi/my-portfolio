@@ -67,7 +67,7 @@ export default function ProjectsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center text-green-400 mb-12"
+         className="text-4xl font-bold mb-12 text-green-400 drop-shadow-[0_0_15px_#00ff99] text-center"
         >
           Projects
         </motion.h2>

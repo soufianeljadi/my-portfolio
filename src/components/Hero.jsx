@@ -32,11 +32,11 @@ function Hero() {
           Software Engineer
         </h2>
         <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6 ">
-          I'm a passionate technologist with a solid foundation in C, C++, Java, J2EE, PHP, Laravel, Shell Scripting, and more. I pursued my education at University Sultan Moulay Slimane, where I earned a diploma as a Technicien Specialise after two years of dedicated study..
+          I’m a passionate technologist with a strong foundation in C, C++, Java, PHP, Laravel, React and Shell Scripting. I earned my Technicien Spécialisé diploma from Sultan Moulay Slimane University, then continued developing my skills at 1337 School, diving deeper into software development and computer science.
         </p>
-                <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6">
+                {/* <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6">
           Continuing my quest for knowledge and growth, I embarked on a journey at School 1337, where I honed my skills further and delved deeper into the world of computer science and programming.
-        </p>
+        </p> */}
         <motion.a
           href="#projects"
           whileHover={{ scale: 1.1, boxShadow: "0 0 20px #3fb11dff" }}
