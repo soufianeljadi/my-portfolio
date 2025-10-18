@@ -32,18 +32,32 @@ function Hero() {
           Software Engineer
         </h2>
         <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6 ">
-          I’m a passionate technologist with a strong foundation in C, C++, Java, PHP, Laravel, React and Shell Scripting. I earned my Technicien Spécialisé diploma from Sultan Moulay Slimane University, then continued developing my skills at 1337 School, diving deeper into software development and computer science.
+          I’m a passionate technologist with a strong foundation in C, C++, Java, PHP, Laravel, React and Shell Scripting. I earned my Technicien Spécialisé diploma from Sultan Moulay Slimane University, then continued developing my skills at 1337 Coding School, diving deeper into software development and computer science.
         </p>
                 {/* <p className="text-gray-300 text-lg md:text-xl max-w-lg mb-6">
           Continuing my quest for knowledge and growth, I embarked on a journey at School 1337, where I honed my skills further and delved deeper into the world of computer science and programming.
         </p> */}
-        <motion.a
-          href="#projects"
-          whileHover={{ scale: 1.1, boxShadow: "0 0 20px #3fb11dff" }}
-          className="inline-block px-8 py-4 bg-green-500 rounded shadow-lg text-white font-bold "
-        >
-          See My Work
-        </motion.a>
+        <div className="flex justify-center gap-4 mt-8">
+  {/* See My Work button */}
+  <motion.a
+    href="#projects"
+    whileHover={{ scale: 1.05 }}
+    className="px-6 py-3 rounded-lg bg-green-500 text-black font-semibold shadow-[0_0_15px_#00ff99] hover:bg-green-400 transition-all duration-300"
+  >
+    See My Work
+  </motion.a>
+
+  {/* Download CV button */}
+  <motion.a
+    href="/cv.pdf"
+    download="Soufiane_El_Jadi_CV.pdf"
+    whileHover={{ scale: 1.05 }}
+    className="px-6 py-3 rounded-lg bg-yellow-400 text-black font-semibold shadow-[0_0_15px_#facc15] hover:bg-yellow-300 transition-all duration-300"
+  >
+    Download My CV
+  </motion.a>
+</div>
+
       </motion.div>
 
       {/* Green Energy Overlay */}
